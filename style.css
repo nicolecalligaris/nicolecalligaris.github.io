@@ -49,6 +49,13 @@
       width: 100%;
       display: block;
     }
+	.portfolio-item.fade {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+.portfolio-item.fade.visible {
+  opacity: 1;
+}
 .chips {
       display: flex;
       gap: 10px;
