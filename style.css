@@ -139,3 +139,81 @@
 gap: 20px;
       }
     }
+/* Stili generali del footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #f8f8f8;
+  font-size: 0.9rem;
+  font-family: 'TriviaSansMedium', sans-serif; /* Il tuo font personalizzato */
+  font-weight:100;
+  color: #333;
+  border-top: 2px solid #e0e0e0;
+  position: relative;
+}
+
+/* Stile del testo del footer */
+footer p {
+  margin: 0;
+  color: #333;
+}
+
+/* Stile del link con transizione */
+footer a {
+  color: #333;
+  text-decoration: none;
+  position: relative;
+  transition: color 0.3s ease, transform 0.3s ease; /* Transizione per colore e movimento */
+}
+
+/* Effetto al passaggio del mouse */
+footer a:hover {
+  color: #007bff; /* Cambia il colore del link */
+  transform: translateY(-2px); /* Solleva leggermente il link */
+}
+
+/* Aggiungi una sottolineatura animata */
+footer a::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #007bff;
+  transition: width 0.3s ease-in-out;
+}
+
+/* Effetto al passaggio del mouse sulla sottolineatura */
+footer a:hover::after {
+  width: 100%; /* Espandi la sottolineatura al passaggio del mouse */
+}
+
+/* Aggiungi ombra leggera per il footer */
+footer {
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Leggera ombra */
+}
+
+/* Media query per dispositivi mobili */
+@media (max-width: 768px) {
+  footer {
+    font-size: 0.8rem; /* Riduci la dimensione del font sui dispositivi mobili */
+  }
+}
+
+
+.caption a svg {
+  width: 24px;
+  height: 24px;
+  margin-left: 8px;
+  fill: currentColor;
+  transition: transform 0.3s ease;
+}
+
+.caption a:hover svg {
+  transform: translateX(4px) translateY(-4px); /* Effetto di spostamento per il hover */
+   color: #007bff;
+}
+
+
+
